@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL Draft</title>
+    <link rel = "stylesheet" href = "node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body class = "container">
+    <div id = "new-draft" class = "jumbotron">
+        <div class ="row">
+                <div class = "col-sm-4">
+                    <img src="https://www.profootballnetwork.com/wp-content/uploads/2021/02/nfl-logo-shield-history-design-meaning.jpg"  width="150" height="132">
+                </div>
+                <div class = "col-sm-6">
+                    <h2 id = "new-draft-title"><b>Team</b></h2>
+                    <input type = "text" id = "new-draft-name" class = "form-control"><br>
+                    <button id = "create-new-draft" onclick="DOMManager.createDraft()" class = "btn btn-dark form-control">Create New Team</button> 
+                </div>
+        </div>
+    </div><br>
+
+    <div id = "app"></div><!--Store all new events here-->
+
+    
+    <script src = "node_modules/jquery/dist/jquery.min.js"></script>
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src = "index.js"></script>
+</body>
+</html>
